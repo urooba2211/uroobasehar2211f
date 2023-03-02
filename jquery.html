@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <div style="height: 100px;background-color:aqua;width:100px"></div>
+    <button class="first">click</button>
+    <button class="sec">double click</button>
+    <button class="third">mousein</button>
+    <button class="fourth">mouseout</button>
+
+    <script>
+    $(".first").click(function(){
+        $('div').css({"background-color":"purple"})
+    });
+
+    $(".sec").dblclick(function(){
+        $('div').css({"background-color":"pink"})
+    });
+    $(".third").mouseenter(function(){
+        $('div').css({"background-color":"azure"})
+    });
+    $(".fourth").mouseleave(function(){
+        $('div').css({"background-color":"orange"})
+    });
+    </script>
+    
+</body>
+</html>
